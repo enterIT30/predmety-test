@@ -72,6 +72,7 @@
 
 .form-contacts .form-contacts__submit {
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .form-contacts textarea {
