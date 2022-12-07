@@ -1,8 +1,8 @@
-.bureau-contacts {
+.contact-form {
   padding: 48px 0 34px;
 }
 
-.bureau-contacts__title {
+.contact-form__title {
   margin-bottom: 68px;
   padding-top: 14px;
   border-top: 1px solid #d7e1e9;
@@ -217,11 +217,11 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .bureau-contacts {
+  .contact-form {
     padding: 34px 0 33px;
   }
 
-  .bureau-contacts__title {
+  .contact-form__title {
     margin-bottom: 43px;
   }
 
@@ -284,11 +284,11 @@
 }
 
 @media screen and (max-width: 992px) {
-  .bureau-contacts {
+  .contact-form {
     padding: 30px 0;
   }
 
-  .bureau-contacts__title {
+  .contact-form__title {
     margin-bottom: 40px;
   }
 
@@ -422,11 +422,11 @@
 }
 
 @media screen and (max-width: 540px) {
-  .bureau-contacts {
+  .contact-form {
     padding: 20px 0;
   }
 
-  .bureau-contacts__title {
+  .contact-form__title {
     margin-bottom: 21px;
     padding-top: 8px;
   }

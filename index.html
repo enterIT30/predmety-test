@@ -18,9 +18,7 @@
         <div class="bureau-main__wrapper">
             <h1 class="bureau-main__title title-main"><span>Дизайн бюро</span><br>Предметы.</h1>
             <div class="bureau-main__desc text--18">Идеальный дом — это что-то своё, поэтому мы делаем индивидуальные и неповторимые проекты, отражающие образ жизни и соответствующие вкусовым предпочтениям.</div>
-            <div class="bureau-main__img">
-                <!-- <img src="img/bureau/bureau-main.jpg" alt="Фото" width="1754" height="590"> -->
-            </div>
+            <div class="bureau-main__img"></div>
             <a href="#" class="bureau-main__btn btn-order">Заказать проект</a>
         </div>
     </div>
@@ -52,11 +50,11 @@
         </div>
     </div>
 </div>
-    <div class="bureau-card-slider">
+    <div class="card-slider">
     <div class="container">
-        <div class="bureau-card-slider__heading">
-            <h2 class="bureau-card-slider__title title-section">Посмотрите другие наши проекты</h2>
-            <div class="bureau-card-slider__arrows slider-arrows">
+        <div class="card-slider__heading">
+            <h2 class="card-slider__title title-section">Посмотрите другие наши проекты</h2>
+            <div class="card-slider__arrows slider-arrows">
                 <button type="button" class="swiper-button-prev">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.784844 11.0002L21.2148 11.0002" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -72,11 +70,11 @@
             </div>
         </div>
     </div>
-    <div class="bureau-card-slider__content">
-        <div class="bureau-card-slider__inner">
-            <div class="bureau-card-slider__slider swiper">
-                <div class="bureau-card-slider__wrapper swiper-wrapper">
-                    <div class="bureau-card-slider__slide swiper-slide">
+    <div class="card-slider__content">
+        <div class="card-slider__inner">
+            <div class="card-slider__slider swiper">
+                <div class="card-slider__wrapper swiper-wrapper">
+                    <div class="card-slider__slide swiper-slide">
                         <a href="#" class="slider-card">
                             <div class="slider-card__info">
                                 <div class="slider-card__counter text--20">01</div>
@@ -88,7 +86,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="bureau-card-slider__slide swiper-slide">
+                    <div class="card-slider__slide swiper-slide">
                         <a href="#" class="slider-card">
                             <div class="slider-card__info">
                                 <div class="slider-card__counter text--20">02</div>
@@ -100,7 +98,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="bureau-card-slider__slide swiper-slide">
+                    <div class="card-slider__slide swiper-slide">
                         <a href="#" class="slider-card">
                             <div class="slider-card__info">
                                 <div class="slider-card__counter text--20">03</div>
@@ -112,7 +110,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="bureau-card-slider__slide swiper-slide">
+                    <div class="card-slider__slide swiper-slide">
                         <a href="#" class="slider-card">
                             <div class="slider-card__info">
                                 <div class="slider-card__counter text--20">04</div>
@@ -124,7 +122,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="bureau-card-slider__slide swiper-slide">
+                    <div class="card-slider__slide swiper-slide">
                         <a href="#" class="slider-card">
                             <div class="slider-card__info">
                                 <div class="slider-card__counter text--20">05</div>
@@ -137,7 +135,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#" class="bureau-card-slider__btn btn-circle btn-circle--everything">
+                <a href="#" class="card-slider__btn btn-circle btn-circle--everything">
                     Смотреть <br> все
                     <svg width="81" height="12" viewBox="0 0 81 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M80.5303 6.53033C80.8232 6.23744 80.8232 5.76256 80.5303 5.46967L75.7574 0.696699C75.4645 0.403806 74.9896 0.403806 74.6967 0.696699C74.4038 0.989593 74.4038 1.46447 74.6967 1.75736L78.9393 6L74.6967 10.2426C74.4038 10.5355 74.4038 11.0104 74.6967 11.3033C74.9896 11.5962 75.4645 11.5962 75.7574 11.3033L80.5303 6.53033ZM0 6.75H80V5.25H0V6.75Z" />
@@ -482,26 +480,14 @@
     <div class="bureau-application">
     <div class="container">
         <div class="bureau-application__wrapper">
-            <div class="bureau-application__title title-section">Заявка дизайнеру</div>
+            <div class="bureau-application__heading">
+                <div class="bureau-application__title">Бесплатная консультация с нашим дизайнером</div>
+                <div class="bureau-application__desc">Наш специалист свяжется с вами в ближайшее время</div>
+            </div>
             <form class="bureau-application__form form-application" action="/" method="post">
                 <input type="hidden" name="" value=""/>
-                <input type="hidden" name="" value=""/>
-                <input type="hidden" name="" value=""/>
-    
-                <input class="form-application__name" name="name" type="text" placeholder="ФИО" required>
                 <input class="form-application__phone" name="phone" type="tel" placeholder="Телефон" required>
-                <input class="form-application__email" name="email" type="email" placeholder="Email" required>
                 <input class="form-application__submit" name="iblock_submit" type="submit" value="Отправить">
-    
-                <div class="form-application__file-desc">
-                    <textarea class="form-application__message" name="message" placeholder="Опишите задачу"></textarea>
-    
-                    <label for="file" class="form-application__file">
-                        <span>Добавить файл</span>
-                    </label>
-                    <input id="file" name="name" type="file">
-                </div>
-    
                 <a href="#" class="form-application__policy">Политика конфиденциальности</a>
             </form>
         </div>
@@ -697,10 +683,10 @@
         </div>
     </div>
 </div>
-    <div class="bureau-contacts">
+    <section class="contact-form">
     <div class="container">
-        <div class="bureau-contacts__title title-section">Контакты</div>
-        <form class="bureau-contacts__form form-contacts" action="/" method="post">
+        <div class="contact-form__title title-section">Контакты</div>
+        <form class="contact-form__form form-contacts" action="/" method="post">
             <input type="hidden" name="" value=""/>
             <input type="hidden" name="" value=""/>
             <input type="hidden" name="" value=""/>
@@ -722,7 +708,7 @@
             <a href="#" class="form-contacts__policy">Политика конфиденциальности</a>
         </form>
     </div>
-</div>
+</section>
     <div class="bureau-address">
     <div class="container">
         <div class="bureau-address__wrapper">
