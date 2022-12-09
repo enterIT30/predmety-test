@@ -3,13 +3,6 @@
   background-color: #f9f9fa;
 }
 
-.bureau-statistics.element-show .bureau-statistics__card {
-  opacity: 1;
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
 .bureau-statistics__cards {
   display: -ms-grid;
   display: grid;
@@ -38,36 +31,6 @@
 .bureau-statistics__cards > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
-}
-
-.bureau-statistics__card:nth-child(1) {
-  opacity: 0;
-  -webkit-transform: translate(0px, 200px);
-      -ms-transform: translate(0px, 200px);
-          transform: translate(0px, 200px);
-  -webkit-transition: all 0.8s ease 0.2s;
-  -o-transition: all 0.8s ease 0.2s;
-  transition: all 0.8s ease 0.2s;
-}
-
-.bureau-statistics__card:nth-child(2) {
-  opacity: 0;
-  -webkit-transform: translate(0px, 200px);
-      -ms-transform: translate(0px, 200px);
-          transform: translate(0px, 200px);
-  -webkit-transition: all 0.8s ease 0.3s;
-  -o-transition: all 0.8s ease 0.3s;
-  transition: all 0.8s ease 0.3s;
-}
-
-.bureau-statistics__card:nth-child(3) {
-  opacity: 0;
-  -webkit-transform: translate(0px, 200px);
-      -ms-transform: translate(0px, 200px);
-          transform: translate(0px, 200px);
-  -webkit-transition: all 0.8s ease 0.4s;
-  -o-transition: all 0.8s ease 0.4s;
-  transition: all 0.8s ease 0.4s;
 }
 
 @media screen and (max-width: 1440px) {
