@@ -64,9 +64,9 @@
 
 .card-package:hover {
   background-color: #A9844B;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.8s;
+  -o-transition: background-color 0.8s;
+  transition: background-color 0.8s;
 }
 
 .card-package:hover .card-package__desc {
@@ -93,9 +93,9 @@
   height: 0%;
   color: #ffffff;
   padding: 64px 51px 40px;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 @media screen and (max-width: 1440px) {
