@@ -1,5 +1,5 @@
 .bureau-statistics {
-  padding: 100px 0 45px;
+  padding: 135px 0 124px;
   background-color: #f9f9fa;
 }
 
@@ -41,31 +41,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 120px;
-  min-height: 416px;
-  padding: 24px 0px 47px 56px;
+  gap: 48px;
+  min-height: 302px;
+  padding: 43px 5px 63px 53px;
   border-left: 3px solid #A9844B;
 }
 
 .cards-statistics__counter {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
   color: #A5ADBB;
 }
 
 .cards-statistics__number {
-  margin-bottom: 20px;
-  font-size: 84px;
+  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 46px;
   line-height: 100%;
   text-transform: uppercase;
   color: #04082E;
 }
 
 .cards-statistics__desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
   word-wrap: break-word;
 }
 
 @media screen and (max-width: 1440px) {
   .bureau-statistics {
-    padding: 55px 0 36px;
+    padding: 108px 0 90px;
   }
 
   .bureau-statistics__cards {
@@ -75,21 +82,14 @@
   }
 
   .cards-statistics {
-    gap: 50px;
-    padding: 24px 0px 75px 38px;
+    padding: 25px 5px 53px 53px;
     border-width: 2px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .cards-statistics__number {
-    margin-bottom: 36px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .bureau-statistics {
-    padding: 30px 0;
+    padding: 26px 0 24px;
   }
 
   .bureau-statistics__cards {
@@ -99,20 +99,24 @@
   }
 
   .cards-statistics {
-    gap: 25px;
-    min-height: 233px;
-    padding: 13px 0 15px 9.5%;
+    gap: 33px;
+    min-height: 208px;
+    padding: 20px 0 34px 26px;
     border-width: 1px;
   }
 
-  .cards-statistics__number {
-    margin-bottom: 14px;
-    font-size: 48px;
-    line-height: 110%;
+  .cards-statistics__counter {
+    font-size: 16px;
   }
 
   .cards-statistics__number {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 110%;
+  }
+
+  .cards-statistics__desc {
+    font-size: 14px;
   }
 }
 
@@ -135,7 +139,11 @@
   }
 
   .cards-statistics__counter {
-    font-size: 14px !important;
-    line-height: 140%;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .cards-statistics__number {
+    margin-bottom: 11px;
   }
 }

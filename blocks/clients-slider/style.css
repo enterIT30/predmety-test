@@ -1,5 +1,5 @@
 .clients-slider {
-  padding-bottom: 62px;
+  padding-bottom: 130px;
 }
 
 .clients-slider__heading {
@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 1440px) {
   .clients-slider {
-    padding-bottom: 56px;
+    padding-bottom: 80px;
   }
 
   .clients-slider__heading {
@@ -276,7 +276,7 @@
 
 @media screen and (max-width: 992px) {
   .clients-slider {
-    padding-bottom: 40px;
+    padding-bottom: 66px;
   }
 
   .clients-slider__heading {
@@ -316,7 +316,7 @@
 
 @media screen and (max-width: 540px) {
   .clients-slider {
-    padding-bottom: 20px;
+    padding-bottom: 46px;
   }
 
   .clients-slider__heading {

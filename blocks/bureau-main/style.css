@@ -2,6 +2,19 @@
   padding: 28px 0 26px;
 }
 
+.bureau-main.element-show .bureau-main__title,
+.bureau-main.element-show .bureau-main__desc {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.bureau-main.element-show .bureau-main__img,
+.bureau-main.element-show .bureau-main__btn {
+  opacity: 1;
+}
+
 .bureau-main__wrapper {
   position: relative;
   display: -ms-grid;
@@ -37,12 +50,26 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  opacity: 0;
+  -webkit-transform: translate(-200px, 0px);
+      -ms-transform: translate(-200px, 0px);
+          transform: translate(-200px, 0px);
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .bureau-main__desc {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  opacity: 0;
+  -webkit-transform: translate(0px, -200px);
+      -ms-transform: translate(0px, -200px);
+          transform: translate(0px, -200px);
+  -webkit-transition: all 0.8s ease 0.2s;
+  -o-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
 }
 
 .bureau-main__img {
@@ -53,6 +80,10 @@
   background: image-set(url("../img/bureau/bureau-main.webp") 1x, url("../img/bureau/bureau-main.jpg") 1x) no-repeat;
   background-size: 100% auto;
   background-position: left bottom;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0.8s;
+  -o-transition: all 0.8s ease 0.8s;
+  transition: all 0.8s ease 0.8s;
 }
 
 .bureau-main__btn {
@@ -67,6 +98,10 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 1s;
+  -o-transition: all 0.5s ease 1s;
+  transition: all 0.5s ease 1s;
 }
 
 @media screen and (max-width: 1440px) {

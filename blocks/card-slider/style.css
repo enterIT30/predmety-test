@@ -2,8 +2,22 @@
   padding-bottom: 62px;
 }
 
+.card-slider.element-show .card-slider__content {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
 .card-slider__content {
   padding: 0 83px;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0px);
+      -ms-transform: translate(100%, 0px);
+          transform: translate(100%, 0px);
+  -webkit-transition: all 1.2s cubic-bezier(0.35, 0.81, 0.32, 1.28) 0.2s;
+  -o-transition: all 1.2s cubic-bezier(0.35, 0.81, 0.32, 1.28) 0.2s;
+  transition: all 1.2s cubic-bezier(0.35, 0.81, 0.32, 1.28) 0.2s;
 }
 
 .card-slider__heading {

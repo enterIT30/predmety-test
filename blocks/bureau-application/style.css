@@ -2,6 +2,20 @@
   position: relative;
   padding: 71px 0 88px;
   background-color: #383B41;
+  opacity: 0;
+  -webkit-transform: translate(0px, 200px);
+      -ms-transform: translate(0px, 200px);
+          transform: translate(0px, 200px);
+  -webkit-transition: all 0.8s ease 0.2s;
+  -o-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
+}
+
+.bureau-application.element-show {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 .bureau-application__wrapper {

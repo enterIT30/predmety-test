@@ -1,5 +1,19 @@
 .bureau-materials {
   padding: 57px 0 51px;
+  opacity: 0;
+  -webkit-transform: translate(0px, 200px);
+      -ms-transform: translate(0px, 200px);
+          transform: translate(0px, 200px);
+  -webkit-transition: all 0.8s ease 0.2s;
+  -o-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
+}
+
+.bureau-materials.element-show {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 .bureau-materials__heading {
