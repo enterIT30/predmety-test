@@ -3,9 +3,9 @@
   padding: 71px 0 88px;
   background-color: #383B41;
   opacity: 0;
-  -webkit-transform: translate(0px, 200px);
-      -ms-transform: translate(0px, 200px);
-          transform: translate(0px, 200px);
+  -webkit-transform: translate(0px, 100px);
+      -ms-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
   -webkit-transition: all 0.8s ease 0.2s;
   -o-transition: all 0.8s ease 0.2s;
   transition: all 0.8s ease 0.2s;
