@@ -16,7 +16,7 @@
   -webkit-column-gap: 22px;
      -moz-column-gap: 22px;
           column-gap: 22px;
-  row-gap: 9px;
+  row-gap: 20px;
 }
 
 .cases-plan__wrapper > *:nth-child(1) {
@@ -47,7 +47,7 @@
 }
 
 .cases-plan__text p:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -76,5 +76,14 @@
   .cases-plan__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+  }
+
+  .cases-plan__wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 }

@@ -71,10 +71,6 @@
     height: 164px;
   }
 
-  .cases-gallery__item img {
-    margin-bottom: 3px;
-  }
-
   .cases-gallery__item figcaption {
     font-size: 12px;
   }

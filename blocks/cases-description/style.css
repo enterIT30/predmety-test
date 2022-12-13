@@ -17,9 +17,6 @@
      -moz-column-gap: 22px;
           column-gap: 22px;
   row-gap: 8px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .cases-description__wrapper > *:nth-child(1) {
@@ -108,7 +105,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
 .cases-description__table {
@@ -138,30 +135,34 @@
 }
 
 .case-table__title {
-  padding: 26px 0 29px;
+  padding: 16px 0;
   color: #A5ADBB;
-}
-
-.case-table__title--first:first-child {
-  padding-top: 0;
 }
 
 .case-table__desc {
   color: #383B41;
 }
 
-.case-table__desc--first {
-  padding-bottom: 29px;
-}
-
 @media screen and (max-width: 1440px) {
   .cases-description__wrapper {
     -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
     row-gap: 16px;
+  }
+  .cases-description__wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .cases-description__wrapper > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
 
   .cases-description__title {
@@ -175,6 +176,7 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    font-weight: 400;
   }
 
   .cases-description__btn {
@@ -194,11 +196,7 @@
   }
 
   .case-table__title {
-    padding: 19px 0 20px;
-  }
-
-  .case-table__desc--first {
-    padding-bottom: 20px;
+    padding: 11px 0;
   }
 }
 
@@ -214,6 +212,7 @@
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     margin-top: 28px;
+    font-size: 16px;
   }
 
   .cases-description__table {
@@ -222,10 +221,6 @@
 
   .case-table__title {
     padding: 10px 0;
-  }
-
-  .case-table__desc--first {
-    padding-bottom: 10px;
   }
 }
 
@@ -237,7 +232,16 @@
   .cases-description__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
     row-gap: 0;
+  }
+
+  .cases-description__wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 
   .cases-description__title {

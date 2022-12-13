@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/fancybox/fancybox.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Main page</title>
+    <title>Дизайн бюро ПРЕДМЕТЫ</title>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
             <h1 class="bureau-main__title title-main"><span>Дизайн бюро</span><br>Предметы.</h1>
             <div class="bureau-main__desc text--18">Идеальный дом — это что-то своё, поэтому мы делаем индивидуальные и неповторимые проекты, отражающие образ жизни и соответствующие вкусовым предпочтениям.</div>
             <div class="bureau-main__img" style="background-image: url(img/bureau/bureau-main.jpg)"></div>
-            <a href="#" class="bureau-main__btn btn-order">Заказать проект</a>
+            <a href="#form" class="bureau-main__btn btn-order">Заказать проект</a>
         </div>
     </div>
 </section>
@@ -482,7 +481,7 @@
         </div>
     </div>
 </div>
-    <div class="bureau-application">
+    <div id="form" class="bureau-application">
     <div class="container">
         <div class="bureau-application__wrapper">
             <div class="bureau-application__heading">
@@ -689,22 +688,21 @@
     </div>
 </div>
     <div class="bureau-application">
-    <div class="container">
-        <div class="bureau-application__wrapper">
-            <div class="bureau-application__heading">
-                <div class="bureau-application__title">Бесплатная консультация с нашим дизайнером</div>
-                <div class="bureau-application__desc">Наш специалист свяжется с вами в ближайшее время</div>
+        <div class="container">
+            <div class="bureau-application__wrapper">
+                <div class="bureau-application__heading">
+                    <div class="bureau-application__title">Бесплатная консультация с нашим дизайнером</div>
+                    <div class="bureau-application__desc">Наш специалист свяжется с вами в ближайшее время</div>
+                </div>
+                <form class="bureau-application__form form-application" action="/" method="post">
+                    <input type="hidden" name="" value=""/>
+                    <input class="form-application__phone" name="phone" type="tel" placeholder="Телефон" required>
+                    <input class="form-application__submit" name="iblock_submit" type="submit" value="Отправить">
+                    <a href="#" class="form-application__policy">Политика конфиденциальности</a>
+                </form>
             </div>
-            <form class="bureau-application__form form-application" action="/" method="post">
-                <input type="hidden" name="" value=""/>
-                <input class="form-application__phone" name="phone" type="tel" placeholder="Телефон" required>
-                <input class="form-application__submit" name="iblock_submit" type="submit" value="Отправить">
-                <a href="#" class="form-application__policy">Политика конфиденциальности</a>
-            </form>
         </div>
     </div>
-</div>
-    
     <div class="bureau-address">
     <div class="container">
         <div class="bureau-address__wrapper">
@@ -733,8 +731,7 @@
 <footer class="footer"></footer>
 
 
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="libs/masonry/masonry.min.js"></script>
+<script src="libs/inputmask/inputmask.min.js"></script>
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=2f9a07c7-0047-40f4-bb79-d1885a920e8a&lang=ru_RU"></script>
 <script src="js/app.min.js"></script>
