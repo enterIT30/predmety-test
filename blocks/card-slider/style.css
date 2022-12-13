@@ -71,9 +71,6 @@
   border-radius: 20px;
   text-decoration: none;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 
 .slider-card__counter {
@@ -100,10 +97,16 @@
   height: 100%;
   background: url(../img/bureau/slider/bureau-slider.jpg) no-repeat center/cover;
   border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  opacity: 0;
+  -webkit-transition-property: opacity, visibility, -webkit-transform;
+  transition-property: opacity, visibility, -webkit-transform;
+  -o-transition-property: opacity, visibility, transform;
+  transition-property: opacity, visibility, transform;
+  transition-property: opacity, visibility, transform, -webkit-transform;
 }
 
 .slider-card__hover:hover {
@@ -120,14 +123,19 @@
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: opacity, visibility;
+  -o-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
 }
 
 .slider-card:hover .slider-card__hover,
 .slider-card:hover .slider-card__more {
   opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 1440px) {
