@@ -110,6 +110,7 @@
 }
 
 .bureau-materials__slide {
+  will-change: width;
   width: 422px;
   height: 444px;
   -webkit-transition: all 0.7s;
@@ -118,6 +119,7 @@
 }
 
 .bureau-materials .swiper-slide-active {
+  will-change: width;
   width: 866px !important;
   height: 600px;
   -webkit-transition: all 0.3s;
