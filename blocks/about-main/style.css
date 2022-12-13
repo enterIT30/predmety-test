@@ -20,9 +20,6 @@
 
 .about-main__img {
   padding-top: 32.5%;
-  background: -webkit-image-set(url("../img/about/about-main.webp") 1x, url("../img/about/about-main.jpg") 1x) no-repeat;
-  background: image-set(url("../img/about/about-main.webp") 1x, url("../img/about/about-main.jpg") 1x) no-repeat;
-  background-position: bottom;
 }
 
 @media screen and (max-width: 1440px) {

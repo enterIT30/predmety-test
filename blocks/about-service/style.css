@@ -9,17 +9,9 @@
 }
 
 .about-service__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(-webkit-min-content, 1fr) 22px minmax(-webkit-min-content, 1fr);
-  -ms-grid-columns: minmax(min-content, 1fr) 22px minmax(min-content, 1fr);
-  grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
-  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(295px, calc(33.333% - 22px)));
   -ms-grid-rows: -webkit-min-content;
   -ms-grid-rows: min-content;
   grid-template-rows: -webkit-min-content;
@@ -27,16 +19,6 @@
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   gap: 22px;
-}
-
-.about-service__cards > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.about-service__cards > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
 }
 
 .service-card {
@@ -54,6 +36,14 @@
   background-repeat: no-repeat;
   text-decoration: none;
   overflow: hidden;
+}
+
+.service-card[data-popup] {
+  border: none;
+  background-color: transparent;
+  font-family: NotoSans;
+  text-align: left;
+  cursor: pointer;
 }
 
 .service-card:hover img {
@@ -100,12 +90,36 @@
   }
 }
 
+@media screen and (max-width: 1130px) {
+  .about-service__cards {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
+  }
+  .about-service__cards > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .about-service__cards > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .about-service {
     padding-bottom: 61px;
   }
 
   .about-service__cards {
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    -ms-grid-rows: -webkit-min-content;
+    -ms-grid-rows: min-content;
+    grid-template-rows: -webkit-min-content;
+    grid-template-rows: min-content;
     gap: 20px;
   }
 

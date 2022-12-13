@@ -321,12 +321,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .bureau-spoiler__img {
-    max-height: 183px;
-  }
-}
-
 @media screen and (max-width: 540px) {
   .bureau-spoiler {
     padding: 20px 0;
