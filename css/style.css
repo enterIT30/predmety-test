@@ -1344,7 +1344,13 @@ h4 {
 }
 
 .bureau-materials__inner {
-  padding-left: calc((100% - 866px) / 2);
+  position: relative;
+}
+
+.bureau-materials__slider {
+  position: relative;
+  left: calc(50% - 433px);
+  top: 0;
 }
 
 .bureau-materials__wrapper {
@@ -1370,6 +1376,8 @@ h4 {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  z-index: 100;
+  overflow: hidden;
 }
 
 .bureau-materials__img {
@@ -6276,12 +6284,12 @@ h4 {
     margin-bottom: 40px;
   }
 
-  .bureau-materials__inner {
-    padding-left: calc((100% - 463px) / 2);
+  .bureau-materials__slider {
+    left: calc(50% - 231px);
   }
 
   .bureau-materials__wrapper {
-    width: calc(100% + 242px);
+    width: calc(100% + 231px);
     height: 334px;
     margin-bottom: 22px;
   }
@@ -7766,12 +7774,12 @@ h4 {
     max-width: unset;
   }
 
-  .bureau-materials__inner {
-    padding-left: calc((100% - 199px) / 2);
+  .bureau-materials__slider {
+    left: calc(50% - 100px);
   }
 
   .bureau-materials__wrapper {
-    width: calc(100% + 103px);
+    width: calc(100% + 100px);
     height: 160px;
     margin-bottom: 8px;
   }
