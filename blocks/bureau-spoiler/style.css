@@ -349,12 +349,10 @@
   }
 
   .spoiler-bureau__trigger button::after {
-    left: calc(50% - 0.5px);
     height: 1px;
   }
 
   .spoiler-bureau__trigger button::before {
-    left: calc(50% - 0.5px);
     height: 1px;
   }
 }
