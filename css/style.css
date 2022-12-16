@@ -2093,13 +2093,22 @@ h4 {
   cursor: pointer;
 }
 
+.spoiler-bureau__item_active .spoiler-bureau__trigger button {
+  background-color: #A9844B;
+}
+
 .spoiler-bureau__item_active .spoiler-bureau__trigger button::before {
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      -ms-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
   -webkit-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+.spoiler-bureau__item_active .spoiler-bureau__trigger button::after,
+.spoiler-bureau__item_active .spoiler-bureau__trigger button::before {
+  background-color: #ffffff;
 }
 
 .spoiler-bureau__item_active .spoiler-bureau__content {
@@ -2128,54 +2137,66 @@ h4 {
   padding: 30px 5px 30px 0;
 }
 
+.spoiler-bureau__trigger:hover button {
+  background-color: #A9844B;
+}
+
+.spoiler-bureau__trigger:hover button::before,
+.spoiler-bureau__trigger:hover button::after {
+  background-color: #ffffff;
+}
+
 .spoiler-bureau__trigger button {
   position: relative;
   min-width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 1px solid #A9844B;
+  border: 2px solid #A9844B;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .spoiler-bureau__trigger button::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 0;
+  left: calc(50% + 1px);
   width: 30px;
-  height: 1px;
+  height: 2px;
   background-color: #A9844B;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .spoiler-bureau__trigger button::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 16%;
+  left: calc(50% + 1px);
   width: 30px;
-  height: 1px;
+  height: 2px;
   background-color: #A9844B;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .spoiler-bureau__content {
   height: 0;
-  pedding-top: 23px;
   opacity: 0;
   overflow: hidden;
   -webkit-transition: all 0.4s ease-in-out;
@@ -6475,7 +6496,6 @@ h4 {
 
   .spoiler-bureau__trigger button::before {
     width: 21px;
-    left: 17%;
   }
 
   .bureau-cost {
@@ -7249,6 +7269,20 @@ h4 {
 
   .crewman-table__photo {
     right: 0;
+  }
+
+  .spoiler-bureau__trigger button {
+    border: 1px solid #A9844B;
+  }
+
+  .spoiler-bureau__trigger button::after {
+    left: calc(50% - 0.5px);
+    height: 1px;
+  }
+
+  .spoiler-bureau__trigger button::before {
+    left: calc(50% - 0.5px);
+    height: 1px;
   }
 
   .bureau-cost__title {
@@ -8074,7 +8108,6 @@ h4 {
 
   .spoiler-bureau__trigger button::before {
     width: 18px;
-    left: 12%;
   }
 
   .bureau-cost {
