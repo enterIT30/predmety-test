@@ -206,7 +206,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  left: calc(50% + 1px);
+  left: 50%;
   width: 30px;
   height: 2px;
   background-color: #A9844B;
@@ -222,7 +222,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: calc(50% + 1px);
+  left: 50%;
   width: 30px;
   height: 2px;
   background-color: #A9844B;
